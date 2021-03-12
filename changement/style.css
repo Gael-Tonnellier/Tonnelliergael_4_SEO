@@ -10,7 +10,6 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
 }
 
 a:hover {
@@ -325,18 +324,12 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
 }
-
-.nav > li a:hover,
-.nav > li a:focus {
-    background: transparent;
-}
-
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
@@ -402,13 +395,11 @@ a:hover {
         margin: 10px auto 0;
     }
 }
-
 .nav > li > .dropdown a {
     background: none!important;
     display: block;
     padding: 14px 15px;
 }
-
 nav .caret {
     margin: 0 5px;
 }
@@ -438,6 +429,7 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .mg-lg {
@@ -651,7 +643,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: black!important;
 }
 
 .container {
@@ -669,7 +661,7 @@ a {
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
@@ -677,7 +669,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 18px;
 }
 
 .tight-width-whitespace {
@@ -686,7 +678,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Open Sans";
 }
 
@@ -695,7 +687,7 @@ p {
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -710,7 +702,7 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -771,7 +763,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #CD4B0E;
 }
 
 .tc-white {
@@ -779,7 +771,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #CD4B0E;
     color: #FFFFFF!important;
 }
 
@@ -797,7 +789,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #CD4B0E!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -822,7 +814,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +840,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +864,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +872,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -893,17 +879,6 @@ h4 {
     .page-container {
         overflow-x: hidden;
         position: relative;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
     }
     .b-parallax {
         background-attachment: scroll;
